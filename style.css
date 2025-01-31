@@ -1,0 +1,99 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.activity {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#words {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.word {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: grab;
+    user-select: none; /* Empêcher la sélection de texte */
+    font-size: 18px;
+}
+
+.word:active {
+    cursor: grabbing; /* Changer le curseur pendant le glissement */
+}
+
+#feedback1, #feedback2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/* Style pour les écrans mobiles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .activity {
+        padding: 15px;
+    }
+
+    .word {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    select {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

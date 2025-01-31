@@ -1,0 +1,20 @@
+{
+  "short_name": "Sourate Al-Fatiha",
+  "name": "Apprendre la sourate Al-Fatiha",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f4f4",
+  "theme_color": "#3498db"
+}

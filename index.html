@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la sourate Al-Fatiha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="app">
+        <h1>Apprends la sourate Al-Fatiha</h1>
+
+        <!-- Activité 1 : Remettre les mots en ordre -->
+        <div id="activity1" class="activity">
+            <h2>Remettre les mots en ordre</h2>
+            <p>Remets les mots dans le bon ordre :</p>
+            <div id="words"></div>
+            <button id="checkOrder">Vérifier</button>
+            <p id="feedback1"></p>
+        </div>
+
+        <!-- Activité 2 : Compléter le verset -->
+        <div id="activity2" class="activity">
+            <h2>Compléter le verset</h2>
+            <p>Complète le verset : "الْحَمْدُ لِلَّهِ _____ الْعَالَمِينَ"</p>
+            <select id="wordChoice">
+                <option value="رَبِّ">رَبِّ</option>
+                <option value="خَالِقِ">خَالِقِ</option>
+                <option value="مَالِكِ">مَالِكِ</option>
+            </select>
+            <button id="checkWord">Vérifier</button>
+            <p id="feedback2"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(() => console.log('Service Worker enregistré'))
+                .catch((error) => console.error('Échec de l’enregistrement du Service Worker :', error));
+        }
+    </script>
+</body>
+</html>
